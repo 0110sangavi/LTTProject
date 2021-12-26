@@ -54,7 +54,7 @@ namespace LTTSASSIGNMENT
                     Console.Write("\tEnter the Last Name: ");
                     lname = Console.ReadLine();
                     name[i] = fname + " " + lname;
-                    Console.Write("\tEnter DOBh(DD/MM/YYYY): ");
+                    Console.Write("\tEnter DOB(DD-MM-YYYY): ");
                     dob[i] = Console.ReadLine();
                     if (i == 0)
                     {
@@ -99,7 +99,7 @@ namespace LTTSASSIGNMENT
                     switch (choice)
                     {
                         case 1:
-                            Console.WriteLine("\n\n  StudentName | DOB | REG No | Course | AdmissionFees | MobileNumber | AdmissionID\n");
+                            Console.WriteLine("\n\n  StudentName | DOB | REG No | Course | AdmissionFees | MobileNumber | Admission-ID\n");
                             for (i = 0; i < n; i++)
                             {
                                 Console.WriteLine($"  {name[i]}\t| {dob[i]} |\t {regNo[i]}\t|\t {course[i]}\t|\t {adFee[i]} \t| {mNum[i]} \t|\t {adId[i]}");
