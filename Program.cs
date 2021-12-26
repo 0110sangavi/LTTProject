@@ -35,7 +35,7 @@ namespace LTTSASSIGNMENT
                 password = Console.ReadLine();
                 if (uname != "ABC" || password != "123")
                 {
-                    Console.WriteLine("Validating.......");
+                    Console.WriteLine("Validating. in process......");
                     Thread.Sleep(500);
                     Console.WriteLine("Invalid username and password");
                     status++;
@@ -43,7 +43,7 @@ namespace LTTSASSIGNMENT
             } while (status <= 3 && password != "password");
             if (uname == "ABC" && password == "abc@")
             {
-                Console.WriteLine("\n\t----------> Student Information <----------");
+                Console.WriteLine("\n\t ****** Student Information ******");
                 Console.Write("\n\tEnter no of Students: ");
                 int n = int.Parse(Console.ReadLine());
                 for (i = 0; i < n; i++)
@@ -73,7 +73,7 @@ namespace LTTSASSIGNMENT
                                 if (reg != regNo[j])
                                     { regNo[i] = reg; stats = true; break;}
                                 else
-                                    Console.WriteLine("\tREG NO is already in exist...!!"); stats = false;
+                                    Console.WriteLine("\t REG NO is already in exist...!!"); stats = false;
                             }
                         } while (!stats);
                     }
@@ -89,7 +89,6 @@ namespace LTTSASSIGNMENT
                 }
                 do
                 {
-                    Console.WriteLine("\n\t\t******* Student Information ******");
                     Console.WriteLine("\n\t1.Display all Students names");
                     Console.WriteLine("\t2.Show total admission fees");
                     Console.WriteLine("\t3.Search student by course");
@@ -110,7 +109,7 @@ namespace LTTSASSIGNMENT
                             {
                                 tFee = tFee + adFee[i];
                             }
-                            Console.WriteLine($"\n------------- Total admission fee: {tFee}");
+                            Console.WriteLine($"\n ************Total admission fee: {tFee}");
                             break;
                         case 3:
                             Console.Write("\n\tEnter course: ");
